@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fcfa;
+    color: #0e0d0d;
+    margin: 0 20px; 
+    padding: 0;
+}
+table {
+  width: 30%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #DEEFD1;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #DEEFD1;
+}
+table#zinssatz-tabelle {
+    position: absolute;
+    right: 120px;
+    top: 160px;
+    width: 30%;
+    border-collapse: collapse;
+    border: 2px solid #2367DB; 
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right; 
+    background-color: #ecf2e7; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+table#zinssatz-tabelle th, table#zinssatz-tabelle td {
+    border: 1px solid #e6e8d9;
+    padding: 10px;
+    text-align: left;
+}
+
+table#zinssatz-tabelle th {
+    background-color: #2367DB; 
+    color: #f4f4f4; 
+}
+
+table#zinssatz-tabelle tr:nth-child(even) {
+    background-color: #e7efe2; 
+}
+
+table#zinssatz-tabelle tr:hover {
+    background-color: #c9eaef;
+}
+h1, h3, h4 {
+    color: #2367DB; 
+}

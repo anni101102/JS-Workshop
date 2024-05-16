@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1 id="idTitel">Geldanlage</h1>
+    <h3>Tragen Sie bitte den Betrag und die Laufzeit ein.</h3>
+
+    <button onclick="alert(kreditInfo)">Kreditinfo</button>
+    
+    <button id="idKundeninfo">Kundeninfo</button>
+    <div id="idKontostandAnzeige"></div>
+
+    <p><input id="idEuro"> Betrag in Euro</p>
+    <p><input id="idLaufzeit" type="number"> Laufzeit in Jahren</p>
+    <p><input id="idButton" type="button" value="Klicken"></p>
+
+    <p><input id="idAusgabe" disabled></p>
+    <p><input id="idZinsAusgabe" disabled></p>
+    <p><input id="idKreditAusgabe"disabled></p>
+
+    
+    <div id="listeContainer"></div>
+
+    <table id="zinssatz-tabelle">
+      <tr>
+        <td class="laufzeit"><strong>Laufzeit</strong></td>
+        <td class="zinssatz"><strong>Zinssatz</strong></td>
+      </tr>
+      <tr>
+        <td class="laufzeit"> &lt; 3 Jahre </td>
+        <td class="zinssatz">2.0% </td>
+      </tr>
+      <tr>
+        <td class="laufzeit"> &lt; 6 Jahre</td>
+        <td class="zinssatz"> 2.5%</td>
+      </tr>
+      <tr>
+        <td class="laufzeit"> &lt; 10 Jahre</td>
+        <td class="zinssatz">3.0%</td>
+      </tr>
+      <tr>
+        <td class="laufzeit"> >= 10 Jahre</td>
+        <td class="zinssatz">3.5%</td>
+      </tr>
+    </table>
+    
+
+    <form id="kundenangaben">
+        <label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" name="nachname"><br>
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname"><br>
+        <label for="kontostand">Kontostand:</label>
+        <input type="number" id="kontostand" name="kontostand"><br>
+        <label for="laufzeit">Laufzeit:</label>
+        <input type="number" id="laufzeit" name="laufzeit"><br>
+        <input type="submit" value="Hinzufügen">
+    </form>
+
+  
+    <table id="kundentabelle">
+      <thead>
+        <tr>
+          <th>Nachname</th>
+          <th>Vorname</th>
+          <th>Kontostand</th>
+          <th>Laufzeit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="bank.js">  </script>
+</body>
+</html>
